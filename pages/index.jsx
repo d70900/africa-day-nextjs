@@ -19,14 +19,14 @@ const Home = () => {
             </div>
             <div className="text-content">
               <h2 className="title">
-                The Importance of Reflecting our African Culture in Global Success
-                Stories
+                The Importance of Reflecting our African Culture in Global
+                Success Stories
               </h2>
               <p className="subtext">
                 As a leading pan-African bank, UBA is very focused on economic
-                growth and prosperity on the African continent. We know that there
-                is a great deal of potential yet untapped in Africa and we want to
-                keep contributing to the development of our continent.
+                growth and prosperity on the African continent. We know that
+                there is a great deal of potential yet untapped in Africa and we
+                want to keep contributing to the development of our continent.
               </p>
             </div>
             <div className="cta">
