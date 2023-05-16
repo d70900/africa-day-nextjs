@@ -10,7 +10,7 @@ import CatchUp from '../components/CatchUp';
 import Signup from '../components/Signup';
 
 const Home = () => {
-  const [signupModal, setSignupModal] = useState(true);
+  const [signupModal, setSignupModal] = useState(false);
 
   return (
     <React.Fragment>
