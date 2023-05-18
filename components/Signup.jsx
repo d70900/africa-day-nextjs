@@ -112,6 +112,7 @@ const Signup = (props) => {
                           setData({ ...data, firstname: e.target.value })
                         }
                         value={data.firstname}
+                        required
                       />
                     </Grid>
                     <Grid item xs={12} sm={6}>
@@ -123,6 +124,7 @@ const Signup = (props) => {
                           setData({ ...data, lastname: e.target.value })
                         }
                         value={data.lastname}
+                        required
                       />
                     </Grid>
                     <Grid item xs={12}>
@@ -134,6 +136,7 @@ const Signup = (props) => {
                           setData({ ...data, email: e.target.value })
                         }
                         value={data.email}
+                        required
                       />
                     </Grid>
                     <Grid item xs={12} sm={6}>
@@ -149,7 +152,12 @@ const Signup = (props) => {
                         )}
                         getOptionLabel={(option) => option.name}
                         renderInput={(params) => (
-                          <TextField {...params} label="Country" size="small" />
+                          <TextField
+                            {...params}
+                            required
+                            label="Country"
+                            size="small"
+                          />
                         )}
                       />
                     </Grid>
@@ -162,6 +170,7 @@ const Signup = (props) => {
                           setData({ ...data, phone: e.target.value })
                         }
                         value={data.phone}
+                        required
                       />
                     </Grid>
                     <Grid item xs={12}>
@@ -209,23 +218,19 @@ const Signup = (props) => {
 export default Signup;
 
 const Register = styled('section')`
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   /* background-image: url('/img/reserve-bg.png'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: fixed;
   background-color: #fafafa;
   .wrapper {
-    max-width: 1440px;
     margin: 0 auto;
     .right-content {
       .formWrapper {
         margin-top: 2rem;
-        padding: 1.5rem;
+        padding: 0.5rem;
         border-radius: 0.5rem;
-        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
-          rgba(0, 0, 0, 0.24) 0px 1px 2px;
-        max-width: 500px;
         margin: 0 auto;
         .subtext {
           font-size: 1rem;

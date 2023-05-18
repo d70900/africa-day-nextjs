@@ -31,10 +31,7 @@ const Home = () => {
               </Link>
             </div>
             <div className="text-content">
-              <h2 className="title">
-                The Importance of Reflecting our African Culture in Global
-                Success Stories
-              </h2>
+              <h2 className="title">Innovating Growth in Africa</h2>
               <p className="subtext">
                 As a leading pan-African bank, UBA is very focused on economic
                 growth and prosperity on the African continent. We know that
@@ -133,12 +130,13 @@ export default Home;
 
 const Container = styled('section')`
   padding: 3rem 1.5rem;
-  /* min-height: 100vh; */
-  /* overflow-y: scroll; */
   background-image: url('/img/map-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: fixed;
+  background-position: center center;
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
   .wrapper {
     max-width: 1440px;
     margin: 0 auto;
@@ -175,7 +173,10 @@ const Container = styled('section')`
         }
         @media (max-width: 600px) {
           flex-direction: column;
-          align-items: flex-start;
+          align-items: center;
+          img {
+            max-width: 100%;
+          }
           button {
             margin: 1rem 0;
           }
@@ -183,6 +184,7 @@ const Container = styled('section')`
       }
       .text-content {
         max-width: 650px;
+        background-color: #ffffff60;
         h2 {
           font-family: Raleway, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
           line-height: 90%;

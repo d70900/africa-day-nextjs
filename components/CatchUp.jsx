@@ -57,6 +57,9 @@ export default CatchUp;
 const Container = styled('section')`
   background-color: #ffffff;
   padding: 3rem 1.5rem;
+  @media (max-width: 768px) {
+    padding: 3rem 1rem;
+  }
   .wrapper {
     max-width: 1440px;
     margin: 0 auto;
@@ -101,6 +104,8 @@ const Container = styled('section')`
           img {
             width: 100%;
             max-height: 200px;
+            object-fit: cover;
+            object-position: center center;
           }
         }
         .event-title {

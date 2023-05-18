@@ -61,6 +61,9 @@ const Container = styled('section')`
   background-repeat: no-repeat;
   background-size: cover;
   padding: 3rem 1.5rem;
+  @media (max-width: 768px) {
+    padding: 3rem 1rem;
+  }
   .wrapper {
     max-width: 1440px;
     margin: 0 auto;
