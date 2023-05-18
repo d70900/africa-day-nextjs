@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import Header1 from '../components/Header1';
 import { Button } from '@mui/material';
 import YouTube from '../components/YouTube';
+import Head from 'next/head';
 
 const ConferenceRoom = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -10,6 +11,10 @@ const ConferenceRoom = () => {
 
   return (
     <Fragment>
+      <Head>
+        <title>Africa Day 2023 - Virtual Conference | UBA Group</title>
+        <meta description="Join the UBA Africa Day 2023 Conversations virtual conference with leading African leaders." />
+      </Head>
       <Header1 />
       <Container>
         <div className="wrapper">

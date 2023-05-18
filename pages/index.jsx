@@ -8,12 +8,18 @@ import Header1 from '../components/Header1';
 import Panelists from '../components/Panelists';
 import CatchUp from '../components/CatchUp';
 import Signup from '../components/Signup';
+import History from '../components/History';
+import Head from 'next/head';
 
 const Home = () => {
   const [signupModal, setSignupModal] = useState(false);
 
   return (
     <React.Fragment>
+      <Head>
+        <title>UBA Africa Day Conversations 2023 | UBA Group</title>
+        <meta description="Join the UBA Africa Day 2023 Conversations With Leading African Leaders. Reserve Your Spot. Register for Free Online." />
+      </Head>
       <Header1 />
       <Container>
         <div className="wrapper">
@@ -118,6 +124,7 @@ const Home = () => {
         </div>
       </Container>
       <Panelists openRegModal={() => setSignupModal(true)} />
+      <History open={() => setSignupModal(true)} />
       <CatchUp />
       {signupModal && (
         <Signup open={signupModal} close={() => setSignupModal(!signupModal)} />
@@ -134,6 +141,7 @@ const Container = styled('section')`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  /* display: none; */
   @media (max-width: 768px) {
     padding: 1rem;
   }
@@ -153,6 +161,7 @@ const Container = styled('section')`
         justify-content: space-between;
         gap: 1rem;
         margin-bottom: 2rem;
+        max-width: 650px;
         img {
           max-width: 220px;
         }
