@@ -151,13 +151,19 @@ const Container = styled('section')`
         span {
           text-transform: uppercase;
         }
+        @media (max-width: 600px) {
+          font-size: 1.25rem;
+        }
       }
       .form-container {
         box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-        padding: 1rem;
+        padding: 2rem;
         max-width: 500px;
         margin: 1rem auto;
         border-radius: 0.25rem;
+        @media (max-width: 600px) {
+          padding: 1.5rem 1rem;
+        }
         button {
           margin-top: 1rem;
           width: 10rem;

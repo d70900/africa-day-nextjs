@@ -48,7 +48,14 @@ const Header1 = () => {
               <a>Event Info</a>
             </Link>
             <Link href="/virtual-conference-room">
-              <a>Join Conference</a>
+              <a
+                style={{
+                  color:
+                    pathname === '/virtual-conference-room' ? '#d70900' : '',
+                }}
+              >
+                Join Conference
+              </a>
             </Link>
             <Link href="/#previous_editions">
               <a>Previous editions</a>
@@ -107,6 +114,14 @@ const Header1 = () => {
         >
           <MenuItem
             onClick={() => {
+              router.push('/');
+              handleClose();
+            }}
+          >
+            Home
+          </MenuItem>
+          <MenuItem
+            onClick={() => {
               router.push('/#panelists');
               handleClose();
             }}
@@ -159,7 +174,7 @@ const Container = styled('header')`
       .home-icon {
         svg {
           width: 1rem;
-          color: #444444;
+          color: #222222;
           margin-bottom: -0.0625rem;
         }
         .africa-day-logo {
@@ -169,6 +184,7 @@ const Container = styled('header')`
       a {
         color: #444444;
         font-size: 0.875rem;
+        font-weight: 600;
         font-family: Raleway, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         text-transform: uppercase;
         &:hover {
