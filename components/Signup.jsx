@@ -14,6 +14,7 @@ import {
 import React, { useState } from 'react';
 import countries from './data/countries';
 import axios from 'axios';
+import { toast } from 'react-toastify';
 
 const Signup = (props) => {
   const { open, close } = props;
@@ -25,14 +26,14 @@ const Signup = (props) => {
     country: '',
     phone: '',
   });
-  const [error, setError] = useState(null);
+
   const [loading, setLoading] = useState(null);
 
   const register = async (e) => {
     e.preventDefault();
     setLoading(true);
     const config = {
-      url: 'https://uba-africa-day-backend.azurewebsites.net/api/applications',
+      url: 'https://uba-africa-day-backend.azurewebsites.net/api/users',
       method: 'POST',
       headers: {
         accept: 'application/json',
@@ -43,18 +44,16 @@ const Signup = (props) => {
       const response = await axios.request(config);
       if (!response.data.error) {
         setLoading(false);
-        alert('Registration successful!');
+        toast.success('Resgitration successful');
         close();
       } else {
         setLoading(false);
-        setError(
-          'Unable to conplete registration at this time. Please try again later'
-        );
+        toast.error('Temporary error: please try again later');
       }
     } catch (error) {
       console.log(error);
       setLoading(false);
-      setError(
+      toast.error(
         'Unable to conplete registration at this time. Please try again later'
       );
     }

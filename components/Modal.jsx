@@ -38,7 +38,7 @@ const DialogModal = (props) => {
             <p className="designation">{item?.designation}</p>
             <h2 className="title">{item.name}</h2>
             <p className="summary">{item.summary}</p>
-            <Button
+            {/* <Button
               variant="contained"
               fullWidth
               onClick={close}
@@ -49,7 +49,7 @@ const DialogModal = (props) => {
               }}
             >
               close
-            </Button>
+            </Button> */}
           </div>
         </Container>
       </DialogContent>

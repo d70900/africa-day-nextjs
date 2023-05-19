@@ -53,7 +53,7 @@ const History = ({ open }) => {
           <YouTube
             open={openModal}
             close={() => setOpenModal(!openModal)}
-            lang="hr"
+            param="https://www.youtube.com/embed/FcP0Iszi9nw"
           />
         )}
       </React.Fragment>

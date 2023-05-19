@@ -1,5 +1,7 @@
+import { ToastContainer } from 'react-toastify';
 import '../styles/style.css';
 import { ThemeProvider, createTheme } from '@mui/material';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function MyApp({ Component, pageProps }) {
   const theme = createTheme({
@@ -29,6 +31,18 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <Component {...pageProps} />
+      <ToastContainer
+        position="top-right"
+        autoClose={2500}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </ThemeProvider>
   );
 }

@@ -17,7 +17,7 @@ const Panelists = ({ openRegModal }) => {
 
   return (
     <React.Fragment>
-      <Container>
+      <Container id="panelists">
         <div className="wrapper">
           <span className="small-text">meet the panelists</span>
           <h2 className="title">

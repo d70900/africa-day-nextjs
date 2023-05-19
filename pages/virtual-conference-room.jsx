@@ -7,7 +7,7 @@ import Head from 'next/head';
 
 const ConferenceRoom = () => {
   const [openModal, setOpenModal] = useState(false);
-  const [lang, setLang] = useState('en');
+  const [param, setParam] = useState('en');
 
   return (
     <Fragment>
@@ -27,7 +27,7 @@ const ConferenceRoom = () => {
                   variant="contained"
                   startIcon={<PlayIcon />}
                   onClick={() => {
-                    setLang('en');
+                    setParam('https://www.youtube.com/embed/paBgzFtcSaI');
                     setOpenModal(true);
                   }}
                 >
@@ -38,7 +38,7 @@ const ConferenceRoom = () => {
                   variant="contained"
                   startIcon={<PlayIcon />}
                   onClick={() => {
-                    setLang('fr');
+                    setParam('https://www.youtube.com/embed/4NiCm8VgYlU');
                     setOpenModal(true);
                   }}
                 >
@@ -54,7 +54,7 @@ const ConferenceRoom = () => {
           <YouTube
             open={openModal}
             close={() => setOpenModal(!openModal)}
-            lang={lang}
+            param={param}
           />
         )}
       </Fragment>

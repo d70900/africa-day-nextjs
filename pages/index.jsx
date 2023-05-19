@@ -10,6 +10,7 @@ import CatchUp from '../components/CatchUp';
 import Signup from '../components/Signup';
 import History from '../components/History';
 import Head from 'next/head';
+import Footer from '../components/Footer';
 
 const Home = () => {
   const [signupModal, setSignupModal] = useState(false);
@@ -126,6 +127,7 @@ const Home = () => {
       <Panelists openRegModal={() => setSignupModal(true)} />
       <History open={() => setSignupModal(true)} />
       <CatchUp />
+      <Footer />
       {signupModal && (
         <Signup open={signupModal} close={() => setSignupModal(!signupModal)} />
       )}

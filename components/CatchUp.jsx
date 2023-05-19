@@ -1,11 +1,19 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
+import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import { Grid } from '@mui/material';
+import YouTube from './YouTube';
 
 const CatchUp = () => {
+  const [openModal, setOpenModal] = useState(false);
+  const [param, setParam] = useState('');
+  const open = (num) => {
+    setOpenModal(true);
+    setParam(num);
+  };
+
   return (
-    <Container>
+    <Container id="previous_editions">
       <div className="wrapper">
         <div className="left-content">
           <span className="small-text">Recent Events</span>
@@ -14,7 +22,12 @@ const CatchUp = () => {
         <div className="previous-events">
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6} md={3}>
-              <div className="event-item">
+              <div
+                className="event-item"
+                onClick={() =>
+                  open('https://www.youtube.com/embed/paBgzFtcSaI')
+                }
+              >
                 <div className="event-image">
                   <img src="/img/recent-event-2020.png" alt="recent-event" />
                 </div>
@@ -22,7 +35,12 @@ const CatchUp = () => {
               </div>
             </Grid>
             <Grid item xs={12} sm={6} md={3}>
-              <div className="event-item">
+              <div
+                className="event-item"
+                onClick={() =>
+                  open('https://www.youtube.com/embed/XyY6mYx6ISM')
+                }
+              >
                 <div className="event-image">
                   <img src="/img/recent-event-2020.png" alt="recent-event" />
                 </div>
@@ -30,7 +48,12 @@ const CatchUp = () => {
               </div>
             </Grid>
             <Grid item xs={12} sm={6} md={3}>
-              <div className="event-item">
+              <div
+                className="event-item"
+                onClick={() =>
+                  open('https://www.youtube.com/embed/faryzqmIGCk')
+                }
+              >
                 <div className="event-image">
                   <img src="/img/recent-event-2020.png" alt="recent-event" />
                 </div>
@@ -38,7 +61,12 @@ const CatchUp = () => {
               </div>
             </Grid>
             <Grid item xs={12} sm={6} md={3}>
-              <div className="event-item">
+              <div
+                className="event-item"
+                onClick={() =>
+                  open('https://www.youtube.com/embed/AmpEJUynVio')
+                }
+              >
                 <div className="event-image">
                   <img src="/img/recent-event-2020.png" alt="recent-event" />
                 </div>
@@ -48,6 +76,15 @@ const CatchUp = () => {
           </Grid>
         </div>
       </div>
+      <React.Fragment>
+        {openModal && (
+          <YouTube
+            open={openModal}
+            close={() => setOpenModal(!openModal)}
+            param={param}
+          />
+        )}
+      </React.Fragment>
     </Container>
   );
 };
