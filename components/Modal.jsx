@@ -37,19 +37,9 @@ const DialogModal = (props) => {
           <div className="text-content">
             <p className="designation">{item?.designation}</p>
             <h2 className="title">{item.name}</h2>
-            <p className="summary">{item.summary}</p>
-            {/* <Button
-              variant="contained"
-              fullWidth
-              onClick={close}
-              sx={{
-                margin: '1rem 0',
-                background: '#D70900',
-                '&:hover': { background: '#D7090090' },
-              }}
-            >
-              close
-            </Button> */}
+            <div className="summary">
+              <div dangerouslySetInnerHTML={{ __html: item.summary }} />
+            </div>
           </div>
         </Container>
       </DialogContent>

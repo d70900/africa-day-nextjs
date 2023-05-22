@@ -27,7 +27,11 @@ const Panelists = ({ openRegModal }) => {
             {panelists.map((panelist, i) => (
               <Grid item xs={12} sm={6} md={4} lg={2} key={panelist.id}>
                 <div className="panelist" onClick={() => openItem(panelist, i)}>
-                  <img src={`/img/panelist${i + 1}.png`} alt="panelist" />
+                  <img
+                    src={`/img/panelist${i + 1}.png`}
+                    alt="panelist"
+                    className={panelist?.imgclass}
+                  />
                   <h3>{panelist.name}</h3>
                 </div>
               </Grid>
@@ -95,6 +99,7 @@ const Container = styled('section')`
       h3 {
         text-align: center;
         margin-top: 0.5rem;
+        color: #5a5a5a;
         font-family: Encode Sans, 'Segoe UI', Tahoma, Geneva, Verdana,
           sans-serif;
       }

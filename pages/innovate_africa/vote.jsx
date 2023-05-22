@@ -8,6 +8,7 @@ import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import { Button, Typography } from '@mui/material';
 import VoteModal from '../../components/VoteModal';
+import Head from 'next/head';
 
 const Vote = () => {
   const [voter, setVoter] = useState({
@@ -31,6 +32,9 @@ const Vote = () => {
 
   return (
     <React.Fragment>
+      <Head>
+        <title>UBA Africa Day Conversations 2023 | UBA Group</title>
+      </Head>
       <Header1 />
       <Container>
         <div className="wrapper">

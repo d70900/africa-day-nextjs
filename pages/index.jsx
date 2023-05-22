@@ -38,7 +38,10 @@ const Home = () => {
               </Link>
             </div>
             <div className="text-content">
-              <h2 className="title">Innovating Growth in Africa</h2>
+              <h2 className="title">
+                Innovating the Continent
+                <br /> for Growth
+              </h2>
               <p className="subtext">
                 As a leading pan-African bank, UBA is very focused on economic
                 growth and prosperity on the African continent. We know that
