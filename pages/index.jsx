@@ -119,11 +119,15 @@ const Home = () => {
             </div>
           </div>
           <div className="hero-img">
-            <img
-              src="/img/africa-day-speakers.png"
-              alt="speakers"
-              draggable="false"
-            />
+            <iframe
+              width="100%"
+              height="480"
+              src="https://www.youtube.com/embed/FcP0Iszi9nw"
+              title="UBA Africa Day"
+              // frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </Container>
@@ -155,7 +159,7 @@ const Container = styled('section')`
     margin: 0 auto;
     display: grid;
     grid-gap: 2rem;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     @media (max-width: 900px) {
       grid-template-columns: 1fr;
     }
@@ -299,14 +303,9 @@ const Container = styled('section')`
     }
     .hero-img {
       width: 100%;
-      /* display: grid; */
-      /* place-items: center; */
       img {
         width: 100%;
         border-radius: 0.5rem;
-      }
-      @media (max-width: 900px) {
-        display: none;
       }
     }
   }
