@@ -88,9 +88,9 @@ const Vote = () => {
                       label="@iduzeth"
                     />
                     <FormControlLabel
-                      value="drwasante"
+                      value="Creativeiniolauwa"
                       control={<Radio />}
-                      label="@drwasante"
+                      label="@Creativeiniolauwa"
                     />
                     <FormControlLabel
                       value="hopex_stararts"
