@@ -27,7 +27,7 @@ const ConferenceRoom = () => {
                   variant="contained"
                   startIcon={<PlayIcon />}
                   onClick={() => {
-                    setParam('https://www.youtube.com/embed/paBgzFtcSaI');
+                    setParam('https://www.youtube.com/embed/Qsg-Jz34ExE');
                     setOpenModal(true);
                   }}
                 >
@@ -38,11 +38,22 @@ const ConferenceRoom = () => {
                   variant="contained"
                   startIcon={<PlayIcon />}
                   onClick={() => {
-                    setParam('https://www.youtube.com/embed/4NiCm8VgYlU');
+                    setParam('https://www.youtube.com/embed/JRKrNpnKcuk');
                     setOpenModal(true);
                   }}
                 >
                   French
+                </Button>
+                <Button
+                  fullWidth
+                  variant="contained"
+                  startIcon={<PlayIcon />}
+                  onClick={() => {
+                    setParam('https://www.youtube.com/embed/2Drofm2L_T0');
+                    setOpenModal(true);
+                  }}
+                >
+                  Portuguese
                 </Button>
               </div>
             </div>
@@ -100,24 +111,32 @@ const Container = styled('section')`
         }
       }
       .options {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         .title {
           font-family: Encode Sans, 'Segoe UI', Tahoma, Geneva, Verdana,
             sans-serif;
           color: #5a5a5a;
+          text-align: center;
+          margin-bottom: 2rem;
         }
-        background-color: #fafafa;
+        background-color: rgba(245, 245, 245, 0.9);
         padding: 2rem;
         border-radius: 0.5rem;
         width: 100%;
-        max-width: 400px;
+        max-width: 600px;
         margin: 0 auto;
         .btn-row {
+          width: 100%;
           display: flex;
           gap: 1rem;
           margin-top: 1rem;
           transition: all ease-in-out 0.2s;
           @media (max-width: 600px) {
             flex-direction: column;
+            align-items: center;
+            button {
+              width: 10rem;
+            }
           }
         }
       }
