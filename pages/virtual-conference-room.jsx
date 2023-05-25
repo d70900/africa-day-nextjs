@@ -152,7 +152,7 @@ const PlayIcon = () => (
     strokeWidth="1.5"
     stroke="currentColor"
     className="w-6 h-6"
-    style={{ width: '2rem' }}
+    style={{ width: '1.75rem' }}
   >
     <path
       strokeLinecap="round"
