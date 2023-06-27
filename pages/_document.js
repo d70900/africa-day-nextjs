@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/next-script-for-ga */
 /* eslint-disable @next/next/no-sync-scripts */
 // /pages/_document.js
 import React from 'react';
@@ -39,6 +40,11 @@ class MyDocument extends Document {
             href="/icons/UBA-Favicon.png"
           />
           <script src="/js/google-tag-manager.js"></script>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-TCDDJ28HRH"
+          ></script>
+          <script async src="/js/gtag"></script>
         </Head>
         <noscript>
           <iframe
