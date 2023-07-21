@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from '@emotion/styled';
 import Header1 from '../../components/Header1';
 import Head from 'next/head';
@@ -8,6 +8,7 @@ const Vote = () => {
     <React.Fragment>
       <Head>
         <title>UBA Africa Day Conversations 2023 | UBA Group</title>
+        <meta description="UBA Africa Day Competition 2023 - Innovate Africa" />
       </Head>
       <Header1 />
       <Container>

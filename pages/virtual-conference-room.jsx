@@ -13,7 +13,7 @@ const ConferenceRoom = () => {
     <Fragment>
       <Head>
         <title>Africa Day 2023 - Virtual Conference | UBA Group</title>
-        <meta description="Join the UBA Africa Day 2023 Conversations virtual conference with leading African leaders." />
+        <meta description="Join the UBA Africa Day 2023 Conversations virtual conference with leading African leaders" />
       </Head>
       <Header1 />
       <Container>
