@@ -7,7 +7,11 @@ const Footer = () => {
       <div className="wrapper">
         <div className="content">
           <p className="left-text">
-            &copy; {new Date().getFullYear()} UBA Group
+            &copy; {new Date().getFullYear()} UBA Group <br />
+            <span>
+              United bank for Africa is licensed and regulated by the Central
+              Bank of Nigeria
+            </span>
           </p>
           <div className="share">
             <span>Share</span>
@@ -121,7 +125,7 @@ const Container = styled('footer')`
       gap: 2rem;
       justify-content: space-between;
       font-family: Raleway;
-      font-size: 0.875rem;
+      font-size: 13px;
       @media (max-width: 768px) {
         flex-direction: column;
         align-items: flex-start;
@@ -132,7 +136,7 @@ const Container = styled('footer')`
         align-items: center;
         gap: 1rem;
         span {
-          font-size: 1rem;
+          font-size: 13px;
         }
         .share-icons {
           display: flex;
