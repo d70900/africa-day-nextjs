@@ -18,8 +18,8 @@ const Home = () => {
   return (
     <React.Fragment>
       <Head>
-        <title>UBA Africa Day Conversations 2023 | UBA Group</title>
-        <meta description="Join the UBA Africa Day 2023 Conversations With Leading African Leaders. Reserve Your Spot. Register for Free Online." />
+        <title>UBA Africa Day Conversations 2024 | UBA Group</title>
+        <meta description="Join the UBA Africa Day 2024 Conversations With Leading African Leaders. Reserve Your Spot. Register for Free Online." />
       </Head>
       <Header1 />
       <Container>

@@ -7,8 +7,8 @@ const Vote = () => {
   return (
     <React.Fragment>
       <Head>
-        <title>UBA Africa Day Conversations 2023 | UBA Group</title>
-        <meta description="UBA Africa Day Competition 2023 - Innovate Africa" />
+        <title>UBA Africa Day Conversations 2024 | UBA Group</title>
+        <meta description="UBA Africa Day Competition 2024 - Innovate Africa" />
       </Head>
       <Header1 />
       <Container>
