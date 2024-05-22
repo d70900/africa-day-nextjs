@@ -31,11 +31,9 @@ const Home = () => {
                 alt="africa-day-logo"
                 draggable="false"
               />
-              <Link href="/virtual-conference-room">
-                <a>
-                  <button>Watch event</button>
-                </a>
-              </Link>
+              {/* <Link href="/virtual-conference-room">
+                <a><button>Watch event</button></a>
+              </Link> */}
             </div>
             <div className="text-content">
               <h2 className="title">
@@ -53,7 +51,7 @@ const Home = () => {
               <Link href="#register" passHref>
                 <a
                   className="cta-item-register"
-                  onClick={() => setSignupModal(true)}
+                  // onClick={() => setSignupModal(true)}
                 >
                   <div>
                     <svg
@@ -131,7 +129,7 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      <Panelists openRegModal={() => setSignupModal(true)} />
+      {/* <Panelists openRegModal={() => setSignupModal(true)} /> */}
       <History open={() => setSignupModal(true)} />
       <CatchUp />
       <Footer />

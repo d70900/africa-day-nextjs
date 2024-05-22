@@ -7,9 +7,9 @@ import YouTube from './YouTube';
 const CatchUp = () => {
   const [openModal, setOpenModal] = useState(false);
   const [param, setParam] = useState('');
-  const open = (num) => {
+  const open = (url) => {
     setOpenModal(true);
-    setParam(num);
+    setParam(url);
   };
 
   return (
@@ -21,6 +21,19 @@ const CatchUp = () => {
         </div>
         <div className="previous-events">
           <Grid container spacing={2}>
+            <Grid item xs={12} sm={6} md={3}>
+              <div
+                className="event-item"
+                onClick={() =>
+                  open('https://www.youtube.com/embed/Qsg-Jz34ExE')
+                }
+              >
+                <div className="event-image">
+                  <img src="/img/recent-event-2020.png" alt="recent-event" />
+                </div>
+                <p className="event-title">Africa Day 2023</p>
+              </div>
+            </Grid>
             <Grid item xs={12} sm={6} md={3}>
               <div
                 className="event-item"

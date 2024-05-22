@@ -28,14 +28,14 @@ const History = ({ open }) => {
               We look forward to hosting you at the UBA Africa Conversations
               2023
             </p>
-            <div className="btn-row">
+            {/* <div className="btn-row">
               <Button variant="contained" onClick={open}>
                 Get started
               </Button>
               <Button variant="contained" href="/virtual-conference-room">
                 Join conference
               </Button>
-            </div>
+            </div> */}
           </div>
           <div className="img-container">
             <div className="img-wrapper">

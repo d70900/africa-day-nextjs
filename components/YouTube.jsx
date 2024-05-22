@@ -3,7 +3,7 @@ import { Dialog } from '@mui/material';
 
 const YouTube = ({ open, close, param }) => {
   return (
-    <Dialog fullWidth maxWidth={'md'} open={open} onClose={close}>
+    <Dialog fullWidth maxWidth={'lg'} open={open} onClose={close}>
       <iframe
         width="100%"
         height="547"
