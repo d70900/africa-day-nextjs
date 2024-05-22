@@ -27,7 +27,7 @@ const Home = () => {
           <div className="main-content">
             <div className="top-content">
               <img
-                src="/img/africa-day-logo.png"
+                src="/img/AFRICA DAY 2024.png"
                 alt="africa-day-logo"
                 draggable="false"
               />
